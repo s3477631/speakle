@@ -1,0 +1,7 @@
+{
+  "name": "speakToMe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
