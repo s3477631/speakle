@@ -1,0 +1,11 @@
+{
+  "/quote/*": {
+    "target": "https://zenquotes.io/api/today",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/quote": ""
+    }
+  }
+}
+

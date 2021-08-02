@@ -1,0 +1,19 @@
+<div class="menu-options">
+    <div class="card" [@cardFlip]="data.state">
+        {{timer}}
+        <div class="back" *ngIf="!flip">
+            <div style="background: #eebce3; height: 200px; padding-top: 30px;padding-left: 10px;" >
+                <div class="quote-text">"{{quote}}"</div>
+                <div class="quote-author">~ {{author}}</div>
+            </div>
+        </div>
+        <div class="front" *ngIf="flip">
+            <div style="background: #496D7C; height: 200px; padding-top: 30px;padding-left: 10px;">
+                <div class="quote-text">"{{quoteChinese}}"</div>
+                <div class="quote-author">~ {{author}}</div>
+            </div>
+        </div>
+    </div>
+    <ion-button expand="full" class="play-button" style="margin: 0px;" (click)="startCameraAbove()">Play
+    </ion-button>
+</div>
